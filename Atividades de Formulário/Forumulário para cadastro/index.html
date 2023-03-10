@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forumuário Para Cadastro</title>
+    <title>Formulário Para Cadastro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
         <form action="#" method="get">
             <fieldset>
-                <legend>Dados Pessais</legend>
+                <legend>Dados Pessoais</legend>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome"><br><br>
 
@@ -20,7 +20,30 @@
 
                 <label for="linkedin">Perfil do LinkedIn:</label>
                 <input type="text" id="linkedin" name="linkedin"><br><br>
+                
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="outros" name="sexo" value="outros">
+                <label for="outros">Outros</label><br><br>
 
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento"><br><br>
+
+                <label for="descricao">Descrição pessoal:</label><br>
+                <textarea id="descricao" name="descricao" rows="4" cols="40"></textarea><br><br>
+
+
+
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Dados De Endereço</legend>
                 <label for="endereco">Endereço:</label>
                 <input type="text" id="endereco" name="endereco"><br><br>
 
@@ -57,23 +80,13 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select><br><br>
-                
-                <label for="sexo">Sexo:</label>
-                <input type="radio" id="masculino" name="sexo" value="masculino">
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="feminino" name="sexo" value="feminino">
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="outros" name="sexo" value="outros">
-                <label for="outros">Outros</label><br><br>
+            </fieldset>
 
-                <label for="nascimento">Data de nascimento:</label>
-                <input type="date" id="nascimento" name="nascimento"><br><br>
+            <br>
 
-                <label for="descricao">Descrição pessoal:</label><br>
-                <textarea id="descricao" name="descricao" rows="4" cols="40"></textarea><br><br>
-
-
-                <label for="gosto-musical">Gosto musical:</label><br>
+            <fieldset>
+                <legend>Gosto Musical</legend>
+                <!-- <label for="gosto-musical">Gosto musical:</label><br> -->
                 <input type="checkbox" id="axe" name="genero" value="axé">
                 <label for="axe">Axé</label><br>
                 <input type="checkbox" id="blues" name="genero" value="blues">
@@ -110,10 +123,9 @@
                 <label for="samba">Samba</label><br>
                 <input type="checkbox" id="sertanejo" name="genero" value="sertanejo">
                 <label for="sertanejo">Sertanejo</label><br>
-
             </fieldset>
 
-            <button type="submit">Salvar</button>
+            <br><button type="submit">Salvar</button>
         </form>
     </main>
 </body>
